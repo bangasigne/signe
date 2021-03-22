@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Formas</title>
+    <script>
+    function krasot(){
+        var kr=document.getElementById("krasa").value;
+        document.getElementById("fons").style="background-color:"+kr;
+        var x = document.getElementById("fons");
+       if (x.innerHTML === "Izvēlēties krāsu") {
+    x.innerHTML = "Krāsa izvēlēta";
+  } else {
+    x.innerHTML = "Izvēlēties krāsu";
+  }
+    }
+    
+    
+    </script>
+</head>
+<body>
+<form>
+  <div id="fons" style="background-color:lightgrey">Izvēlēties krāsu </div>
+  <input type="color" id="krasa" value="#00ff00" onclick="krasot();"
+          >
+  
+</form>
+    
+</body>
+</html>
